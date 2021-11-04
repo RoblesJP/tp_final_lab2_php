@@ -1,0 +1,43 @@
+main {
+    align-items: center;
+    justify-content: center;
+}
+
+main form {
+    display: flex;
+    min-width: 15em;
+    flex-direction: column;
+    padding: 1em;
+    border: 2px solid #032535;
+}
+form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #032535;
+}
+
+form input:not([type="submit"]):not([type="file"]) {
+    font-size: 1.2em;
+    color: rgba(255, 88, 88, 1);
+    font-weight: bold;
+    background: none;
+    padding: 0.5em;
+    margin: 0.2em 0.2em 1em 0.2em;
+    border: 2px dashed #032535;
+}
+
+input[type="submit"] {
+    margin: 1em auto 0 auto;
+    padding: 0.5em;
+    width: 10em;
+    color: white;
+    background-color: #42b883;
+    border: none;
+}
+
+#sizeControl {
+    color: red;
+    padding: 0.3em;
+}
